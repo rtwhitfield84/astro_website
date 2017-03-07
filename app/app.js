@@ -9,5 +9,13 @@ app.config(function($routeProvider,$locationProvider) {
 		templateUrl: 'partials/main.html',
 		controller: 'MainCtrl'
 	})
+	.when('/login', {
+		templateUrl: 'partials/login.html',
+		controller: 'LoginCtrl'
+	})
+	.when('/my_tab_yard', {
+		templateUrl: 'partials/myTabYard.html',
+		controller: 'TabYardCtrl'
+	})
 	.otherwise('/');
 });
