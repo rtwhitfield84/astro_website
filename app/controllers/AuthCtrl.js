@@ -40,6 +40,7 @@ function($scope, $http, $location, RootFactory) {
 
 
   $scope.login = function() {
+  	console.log("user", $scope.user);
       $http({
         url: "http://localhost:8000/api-token-auth/",
         method: "POST",
@@ -50,7 +51,7 @@ function($scope, $http, $location, RootFactory) {
       }).then(
         res => {
           RootFactory.setToken(res.data.token);
-          console.log(RootFactory.getToken());
+          console.log(RootFactory.get_token());
           if (res.data.token !== "") {
               $location.path('/products');
           }
