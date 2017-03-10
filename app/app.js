@@ -1,6 +1,7 @@
 "use strict";
 
-var app = angular.module('Astro', ['ngRoute']); 
+var app = angular.module('Astro', ['ngRoute'])
+					.constant('apiUrl', "http://localhost:8000"); 
 
 app.config(function($routeProvider,$locationProvider) {
 	$locationProvider.hashPrefix('');
@@ -11,7 +12,7 @@ app.config(function($routeProvider,$locationProvider) {
 	})
 	.when('/login', {
 		templateUrl: 'partials/login.html',
-		controller: 'LoginCtrl'
+		controller: 'AuthCtrl'
 	})
 	.when('/my_tab_yard', {
 		templateUrl: 'partials/myTabYard.html',
