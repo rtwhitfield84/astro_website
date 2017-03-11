@@ -31,7 +31,7 @@ function($scope, $http, $location, RootFactory) {
           RootFactory.setToken(res.data.token);
           console.log(RootFactory.getToken());
           if (res.data.success === true) {
-              $location.path('/products');
+              $location.path('/');
           }
         },
         console.error
@@ -51,13 +51,14 @@ function($scope, $http, $location, RootFactory) {
       }).then(
         res => {
           RootFactory.setToken(res.data.token);
-          console.log(RootFactory.get_token());
+          console.log(RootFactory.getToken());
           if (res.data.token !== "") {
-              $location.path('/products');
+              $location.path('/');
           }
         },
         console.error
       );
   };
+
 
 }]);

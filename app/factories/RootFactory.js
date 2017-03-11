@@ -14,10 +14,9 @@ app.factory('RootFactory', ["$http", "apiUrl",($http, apiUrl) => {
 		setToken(token) {
 			secure_token = token;
 		},
-		get_token() {
+		getToken() {
 			return secure_token;
 		}
 	};
 
-	return RootFactory;
 }]);
