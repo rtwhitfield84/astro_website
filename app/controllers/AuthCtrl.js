@@ -14,7 +14,7 @@ function($scope, $http, $location, RootFactory) {
 
   $scope.register = function() {
       $http({
-        url: "http://localhost:8000/register",
+        url: "https://api-astro.herokuapp.com/api-token-auth/",
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
@@ -42,7 +42,7 @@ function($scope, $http, $location, RootFactory) {
   $scope.login = function() {
   	console.log("user", $scope.user);
       $http({
-        url: "http://localhost:8000/api-token-auth/",
+        url: "https://api-astro.herokuapp.com/api-token-auth/",
         method: "POST",
         data: {
           "username": $scope.user.username,

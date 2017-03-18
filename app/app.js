@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module('Astro', ['ngRoute'])
-					.constant('apiUrl', "http://localhost:8000"); 
+					.constant('apiUrl', "https://api-astro.herokuapp.com"); 
 
 app.config(function($routeProvider,$locationProvider) {
 	$locationProvider.hashPrefix('');
