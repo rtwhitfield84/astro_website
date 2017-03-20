@@ -1,7 +1,12 @@
 <h1>Tab yard</h1>
 
-<div>
+<!-- <div ng-repeat="art in albumArt"> -->
   <div ng-repeat="tab in tabs">
-    {{tab.artist_name}}: {{tab.song_title}} {{tab.user}}
-  </div>
+    {{tab.artist_name}}: {{tab.song_title}} 
+    <a ng-href="{{tab.tab_url}}" target="blank">Tab</a>
+    <a ng-href="{{tab.chords_url}}" target="blank">Chords</a>
+    <a ng-href="{{tab.artist_url}}" target="blank">All {{tab.artist_name}} tabs</a>
+    <button id="{{tab.id}}" ng-click="delete($event)">delete</button>
+    <img src="{{art}}">
+  <!-- </div> -->
 </div>
