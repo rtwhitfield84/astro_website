@@ -1,12 +1,20 @@
-<h1>Tab yard</h1>
+<div class="row">
+<div class="text-center">
+<h1>{{currentUser.username}}'sTab yard</h1>
+</div>
+</div>
 
-<!-- <div ng-repeat="art in albumArt"> -->
-  <div ng-repeat="tab in tabs">
-    {{tab.artist_name}}: {{tab.song_title}} 
+  <div class="row" >
+  <!-- <div class="clearfix" ng-if="$index % 3 == 0"></div> -->
+  <div class="col-md-3 tabCard" ng-repeat="tab in tabs | orderBy : '-id'">
+  <img class="albumCover" ng-src="{{tab.art_url}}" alt="{{tab.album}}">
+    {{tab.artist_name}}: {{tab.song_title}}
+    <a ng-click="delete($event)"></a> 
     <a ng-href="{{tab.tab_url}}" target="blank">Tab</a>
-    <a ng-href="{{tab.chords_url}}" target="blank">Chords</a>
+    <a ng-href="{{tab.chords_url}}" target="blank">Chords</a> 
     <a ng-href="{{tab.artist_url}}" target="blank">All {{tab.artist_name}} tabs</a>
-    <button id="{{tab.id}}" ng-click="delete($event)">delete</button>
-    <img src="{{art}}">
-  <!-- </div> -->
+    <a ng-href="{{tab.youtube_video_id}}" target="blank">Youtube</a>
+
+    <a ng-click="delete($event)"><span id="{{tab.id}}" class="glyphicon glyphicon-trash"></span></a>
+   </div>
 </div>
