@@ -91,7 +91,7 @@ body {
   font-size: 1.4em;
   height: 500px;
   margin: 2% 4.167%;
-  border: 1px solid #179E5C;
+  border: 3px solid #179E5C;
   box-shadow: 100 100px 100px rgba(0, 0, 0, 0.375); }
 
 .tabCard:hover {
@@ -101,13 +101,13 @@ body {
 .tabCard h4 {
   margin-top: 0;
   color: #2c3e50;
-  text-shadow: .5px .5px .5px #179E5C;
+  text-shadow: .5px .5px .5px #ecf0f1;
   font-style: italic; }
 
 .tabCard a {
   color: #2c3e50;
   font-size: 1em;
-  text-shadow: .5px .5px .5px #179E5C;
+  text-shadow: .5px .5px .5px #ecf0f1;
   font-style: italic; }
 
 .tabCard a:hover {
