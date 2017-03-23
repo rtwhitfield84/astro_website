@@ -1,87 +1,146 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
-	background-color: #2c3e50;
-	font-family: 'Orbitron', sans-serif;
-	color: #ecf0f1;
-	text-shadow: 1px 1px 1px #ecf0f1;
-}
+  background-color: #2c3e50;
+  font-family: 'Orbitron', sans-serif;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 1px #ecf0f1;
+  margin-bottom: 60px; }
+
+.mainTitle {
+  font-size: 4em;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 2px #179E5C;
+  font-style: italic; }
+
+.astroMainImage {
+  margin-top: -35px;
+  height: 200px; }
 
 .nav-container .navbar-brand {
   display: flex;
   align-items: center;
-  border: 5px #179E5C;
-}
-.nav-container .navbar-brand>img {
-  margin-top: 32px;
-  height: 96px;
-}
+  /*border: 5px #179E5C;*/ }
 
+.nav-container .navbar-brand > img {
+  margin-top: 32px;
+  height: 96px; }
 
 .navbar {
-	background-color: #ecf0f1;
-	height: 100px;
-	border: 2px solid #179E5C;
-}
+  background-color: #ecf0f1;
+  height: 100px;
+  border: 3px solid #179E5C; }
 
 .nav.navbar-nav li a {
-    color: #2c3e50;
-    font-size: 1.5em;
-    margin-top: 15px;
-    text-shadow: .5px .5px .5px #179E5C;
-}
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-top: 15px;
+  text-shadow: .5px .5px .5px #179E5C;
+  font-style: italic; }
 
 .nav.navbar-nav li a:hover {
-   /*opacity: 0;*/
-   text-shadow: 2px 2px 10px #179E5C;
-}
+  text-shadow: 2px 2px 5px #179E5C; }
 
 .navbar-brand {
-  float: none;
-  }
+  float: none; }
 
-.astroNavTitle{
-color: #2c3e50;
-text-align: center; 
-margin-top: -60px; 
-margin-left: 15%; 
-font-size: 7em;
-letter-spacing: .15em;
-text-shadow: 1px 1px 1px #179E5C;
-}
+.astroNavTitle {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: -60px;
+  margin-left: 11%;
+  font-size: 7em;
+  letter-spacing: .15em;
+  text-shadow: 1px 1px 1px #179E5C;
+  font-style: italic; }
+
+.astroLoginImage {
+  height: 300px; }
+
+.login {
+  background-color: #ecf0f1;
+  border: 1px solid #179E5C;
+  color: #2c3e50; }
+
+.form-control:focus {
+  border-color: #179E5C;
+  box-shadow: inset 0 1px 1px rgba(23, 158, 92, 0.75), 0 0 8px rgba(23, 158, 92, 0.75); }
+
+.btn:focus, .btn:hover, .btn:active {
+  outline: #179E5C !important;
+  border-color: #179E5C;
+  box-shadow: inset 0 1px 1px rgba(23, 158, 92, 0.75), 0 0 8px rgba(23, 158, 92, 0.75);
+  text-shadow: .5px .5px .5px #179E5C; }
+
+.tabyardTitle {
+  font-size: 4.5em;
+  letter-spacing: .1em;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 2px #179E5C;
+  font-style: italic; }
 
 .tabCard {
-	text-align: center;
-	font-size: 1.4em;
-	height: 325px;
-	margin: 2% 3.5%;
-	border: 2px solid #179E5C;
-	box-shadow: 100 100px 100px rgba(0,0,0,0.15);
-	background-color: rgba(255, 255, 255, 0.8);
-	transition: width 2s, height 2s, transform 2s;
-}
-
-
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  text-align: center;
+  font-size: 1.4em;
+  height: 500px;
+  margin: 2% 4.167%;
+  border: 1px solid #179E5C;
+  box-shadow: 100 100px 100px rgba(0, 0, 0, 0.375); }
 
 .tabCard:hover {
-	box-shadow: 100px 100px 100px rgba(0,0,0,0.8);
-	transition: 2s 0.3s;
-}
+  box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.8);
+  transition: 1s 0.3s; }
+
+.tabCard h4 {
+  margin-top: 0;
+  color: #2c3e50;
+  text-shadow: .5px .5px .5px #179E5C;
+  font-style: italic; }
+
+.tabCard a {
+  color: #2c3e50;
+  font-size: 1em;
+  text-shadow: .5px .5px .5px #179E5C;
+  font-style: italic; }
+
+.tabCard a:hover {
+  text-shadow: 2px 2px 5px #179E5C; }
 
 .albumCover {
-	height: 200px;
-	width: 200px;
-}
+  height: 302px;
+  width: 100%; }
+
+.youtubeIcon {
+  height: 50px;
+  width: 50px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #179E5C;
+  font-size: .75em;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  text-shadow: .25px .25px .25px #179E5C;
+  font-style: italic;
+  text-align: center;
+  padding: auto; }
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 @media screen and (max-width: 768px) {
- .astroNavTitle {
- 	font-size: 4em;
- 	margin-top: -20px;
-        /*display: none;*/
+  .astroNavTitle {
+    font-size: 4em;
+    margin-top: -20px;
+    /*display: none;*/ } }
 
-    }
-
-/*  .nav-container .navbar-brand>img {
-  padding: 2px;
-  margin: 5px auto;
-  height: 96px;
-}*/
-}
+/*# sourceMappingURL=main.css.map */

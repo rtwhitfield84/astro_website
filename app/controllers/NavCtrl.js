@@ -11,7 +11,7 @@ app.controller('NavCtrl', function($scope,$window,$http, RootFactory){
 	};
 
 	$scope.logout = () => {
-		$window.location.reload();
 		$window.location.href = '#/';
+		$window.location.reload();
 	};
 });
