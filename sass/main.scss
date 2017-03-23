@@ -1,3 +1,5 @@
+/************************GENERAL STYLES**************************/ 
+
 html {
   position: relative;
   min-height: 100%;
@@ -10,6 +12,8 @@ body {
 	text-shadow: 1px 1px 1px #ecf0f1;
 	margin-bottom: 60px;
 }
+
+/************************NAV STYLES**************************/
 
 .mainTitle {
 	font-size: 4em;
@@ -26,13 +30,11 @@ body {
 .nav-container .navbar-brand {
   display: flex;
   align-items: center;
-  /*border: 5px #179E5C;*/
 }
 .nav-container .navbar-brand>img {
   margin-top: 32px;
   height: 96px;
 }
-
 
 .navbar {
 	background-color: #ecf0f1;
@@ -67,10 +69,12 @@ text-shadow: 1px 1px 1px #179E5C;
 font-style: italic;
 }
 
+/************************LOGIN STYLES**************************/
+
+
 .astroLoginImage{
 
 	height:300px;
-
 }
 
 
@@ -91,6 +95,9 @@ font-style: italic;
 	box-shadow: inset 0 1px 1px rgba(23, 158, 92, 0.75), 0 0 8px rgba(23, 158, 92, 0.75);
 	text-shadow: .5px .5px .5px #179E5C;
 }
+
+/************************TABYARD STYLES**************************/
+
 
 .tabyardTitle {
 	font-size: 4.5em;
@@ -145,10 +152,12 @@ font-style: italic;
 	width: 50px;
 }
 
+/************************FOOTER & BS OVERRIDE STYLES**************************/
+
+
 .footer {
   position: absolute;
   bottom: 0;
-  // margin-bottom: -200px;
   width: 100%;
   height: 60px;
   line-height: 60px;
@@ -172,7 +181,6 @@ font-style: italic;
  .astroNavTitle {
  	font-size: 4em;
  	margin-top: -20px;
-        /*display: none;*/
 
     }
 

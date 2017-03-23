@@ -7,8 +7,7 @@ app.config(function($routeProvider,$locationProvider) {
 	$locationProvider.hashPrefix('');
 	$routeProvider
 	.when('/', {
-		templateUrl: 'partials/main.html',
-		controller: 'MainCtrl'
+		templateUrl: 'partials/main.html'
 	})
 	.when('/login', {
 		templateUrl: 'partials/login.html',

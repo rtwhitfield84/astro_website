@@ -13,8 +13,6 @@ app.factory('TabStorage', ($http, $window, RootFactory) => {
         'Authorization': "Token " + RootFactory.getToken()
       }
     }).success((tabs) => {
-      console.log("tabsdata", tabs);
-      console.log("tabsdata", tabs.results);
       
       resolve(tabs);
     }).error((err) => {
@@ -32,7 +30,6 @@ app.factory('TabStorage', ($http, $window, RootFactory) => {
         'Authorization': "Token " + RootFactory.getToken()
       }
     }).success((res) => {
-      console.log("res", res);
       user = res.username;
       resolve(res);
     }).error((res) => {

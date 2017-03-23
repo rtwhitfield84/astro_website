@@ -1,3 +1,4 @@
+/************************GENERAL STYLES**************************/
 html {
   position: relative;
   min-height: 100%; }
@@ -9,6 +10,7 @@ body {
   text-shadow: 1px 1px 1px #ecf0f1;
   margin-bottom: 60px; }
 
+/************************NAV STYLES**************************/
 .mainTitle {
   font-size: 4em;
   color: #ecf0f1;
@@ -21,8 +23,7 @@ body {
 
 .nav-container .navbar-brand {
   display: flex;
-  align-items: center;
-  /*border: 5px #179E5C;*/ }
+  align-items: center; }
 
 .nav-container .navbar-brand > img {
   margin-top: 32px;
@@ -56,6 +57,7 @@ body {
   text-shadow: 1px 1px 1px #179E5C;
   font-style: italic; }
 
+/************************LOGIN STYLES**************************/
 .astroLoginImage {
   height: 300px; }
 
@@ -74,6 +76,7 @@ body {
   box-shadow: inset 0 1px 1px rgba(23, 158, 92, 0.75), 0 0 8px rgba(23, 158, 92, 0.75);
   text-shadow: .5px .5px .5px #179E5C; }
 
+/************************TABYARD STYLES**************************/
 .tabyardTitle {
   font-size: 4.5em;
   letter-spacing: .1em;
@@ -118,6 +121,7 @@ body {
   height: 50px;
   width: 50px; }
 
+/************************FOOTER & BS OVERRIDE STYLES**************************/
 .footer {
   position: absolute;
   bottom: 0;
@@ -140,7 +144,6 @@ body {
 @media screen and (max-width: 768px) {
   .astroNavTitle {
     font-size: 4em;
-    margin-top: -20px;
-    /*display: none;*/ } }
+    margin-top: -20px; } }
 
 /*# sourceMappingURL=main.css.map */
