@@ -111,10 +111,10 @@ font-style: italic;
 	color: #2c3e50;
 	background-color: #ecf0f1;
 	text-align: center;
-	font-size: 1.4em;
-	height: 500px;
+	// font-size: em;
+	height: 510px;
 	margin: 2% 4.167%;
-	border: 3px solid #179E5C;
+	// border: 5px solid #2c3e50;
 	box-shadow: 100 100px 100px rgba(0,0,0,0.375);
 }
 
@@ -124,17 +124,18 @@ font-style: italic;
 }
 
 .tabCard h4 {
-	margin-top: 0;
+	// margin-top: 0;
+	// font-size: 1.3em;
 	color: #2c3e50;
-	text-shadow: .5px .5px .5px #ecf0f1;;
+	text-shadow: 1px 1px 1px #2c3e50;
 	font-style: italic;
 }
 
 .tabCard a {
 	color: #2c3e50;
 	font-size: 1em;
-	text-shadow: .5px .5px .5px #ecf0f1;;
-	font-style: italic;
+	// text-shadow: .5px .5px .5px #179E5C;;
+	// font-style: italic;
 }
 
 .tabCard a:hover {

@@ -4,6 +4,7 @@ app.controller('TabYardCtrl', function($scope, $http, $location,TabStorage,$root
 
 	$scope.tabs = [];
 
+//gets users tabs from db
 	TabStorage.getTabs()
 	.then((tabs) => {
 	$scope.tabs = tabs.results;

@@ -88,10 +88,8 @@ body {
   color: #2c3e50;
   background-color: #ecf0f1;
   text-align: center;
-  font-size: 1.4em;
-  height: 500px;
+  height: 510px;
   margin: 2% 4.167%;
-  border: 3px solid #179E5C;
   box-shadow: 100 100px 100px rgba(0, 0, 0, 0.375); }
 
 .tabCard:hover {
@@ -99,16 +97,13 @@ body {
   transition: 1s 0.3s; }
 
 .tabCard h4 {
-  margin-top: 0;
   color: #2c3e50;
-  text-shadow: .5px .5px .5px #ecf0f1;
+  text-shadow: 1px 1px 1px #2c3e50;
   font-style: italic; }
 
 .tabCard a {
   color: #2c3e50;
-  font-size: 1em;
-  text-shadow: .5px .5px .5px #ecf0f1;
-  font-style: italic; }
+  font-size: 1em; }
 
 .tabCard a:hover {
   text-shadow: 2px 2px 5px #179E5C; }

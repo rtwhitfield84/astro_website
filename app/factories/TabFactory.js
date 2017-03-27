@@ -4,6 +4,7 @@ app.factory('TabStorage', ($http, $window, RootFactory) => {
 
   let user = '';
 
+//gets current users tabs
     let getTabs = () => {
   return new Promise((resolve, reject) => {
     $http({
@@ -20,7 +21,7 @@ app.factory('TabStorage', ($http, $window, RootFactory) => {
     });
   });
   };
-
+//gets current user by id returned from tabs
   let getCurrentUser = (id) => {
       return new Promise ((resolve, reject) =>{
     $http({
